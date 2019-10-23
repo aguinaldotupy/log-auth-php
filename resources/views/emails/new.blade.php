@@ -1,14 +1,14 @@
 @component('mail::message')
-# Hello!
+# Olá!
 
-Your {{ config('app.name') }} account logged in from a new device.
+Sua conta no aplicativo {{ config('app.name') }} foi conectado por um novo dispositivo.
 
-> **Account:** {{ $account->email }}<br>
-> **Time:** {{ $time->toCookieString() }}<br>
-> **IP Address:** {{ $ipAddress }}<br>
+> **Conta:** {{ $account->email }}<br>
+> **Hora:** {{ $time->toCookieString() }}<br>
+> **IP de acesso:** {{ $ipAddress }}<br>
 > **Browser:** {{ $browser }}
 
-If this was you, you can ignore this alert. If you suspect any suspicious activity on your account, please change your password.
+Se você não reconhece este acesso, altere sua senha.
 
-Regards,<br>{{ config('app.name') }}
+Obrigado,<br>{{ config('app.name') }}
 @endcomponent

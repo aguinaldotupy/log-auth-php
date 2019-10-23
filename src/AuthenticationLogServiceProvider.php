@@ -18,6 +18,8 @@ class AuthenticationLogServiceProvider extends ServiceProvider
     {
         $this->registerEvents();
 
+        $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
+
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'authentication-log');
 
         $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'authentication-log');

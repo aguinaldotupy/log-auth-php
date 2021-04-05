@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Auth;
 
-class AuthCheckCtrl extends Controller
+class AuthCheck extends Controller
 {
     /**
      * ping the server to check whether user is online
